@@ -14,8 +14,9 @@ if (!databaseUri) {
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
+  appId: process.env.APP_ID || 'GCBfwawY7a4MRekcHuAgDkhVyaJG2Q4v69xsRJLh',
+  masterKey: process.env.MASTER_KEY || 'fNX9VrkcTMjM7ApRrptic3fhXn6oIudaqWITPzwn', //Add your master key here. Keep it secret!
+  clientKey: 'QaRPUW8kcn0thAhX01PO5O44OOsqtERnFrNonakm'
   serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
